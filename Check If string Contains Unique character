@@ -1,0 +1,13 @@
+def unique_char(s):
+    isUnique = True
+    for i in s:
+
+        if s.count(i) > 1:
+            isUnique = False
+            break
+        else:
+            isUnique = True
+    return isUnique
+
+
+print(unique_char("one"))
